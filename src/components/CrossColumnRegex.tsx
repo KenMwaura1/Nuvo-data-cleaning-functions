@@ -3,7 +3,7 @@ import { FC } from "react";
 import { IHandlerFC } from "../types/HandlerFC";
 import { ColumnAPI, NuvoImporter } from "nuvo-react";
 
-export const CheckDuplicates: FC<IHandlerFC> = ({ setResult }) => {
+export const CrossColumnRegex : FC<IHandlerFC> = ({ setResult }) => {
   // Columns defined for the input file to be uploaded
   const columns: ColumnAPI[] = [
 	{

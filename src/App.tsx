@@ -3,6 +3,7 @@ import { useState } from "react";
 import { ConvertFloats } from "./components/ConvertFloats";
 import { CheckDuplicates } from "./components/CheckDuplicates";
 import { AddCountryCode } from "./components/AddCountryCode";
+import { CrossColumnRegex } from "./components/CrossColumnRegex";
 
 
 export default function App() {
@@ -23,7 +24,7 @@ export default function App() {
             {/* <ConvertFloats setResult={setResult} /> */}
             {/* <CheckDuplicates setResult={setResult} /> */}
             {/* <AddCountryCode setResult={setResult} /> */}
-
+            <CrossColumnRegex setResult={setResult} />
           </div>
           <div className="white-box">
             {Object.keys(result).length !== 0 && (
