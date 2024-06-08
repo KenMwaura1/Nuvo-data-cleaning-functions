@@ -1,0 +1,90 @@
+html,
+body {
+  background-color: #162338;
+  margin: 0px;
+  padding: 0px;
+}
+
+.App {
+  font-family: sans-serif;
+  text-align: center;
+  width: 100vw;
+  height: 100vh;
+  color: white;
+}
+
+.container-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+}
+
+.description {
+  margin-top: 64px;
+  margin-bottom: 48px;
+}
+
+.white-box {
+  border-radius: 12px;
+  background-color: white;
+  height: 330px;
+  width: 80vw;
+  display: flex;
+  overflow-y: auto;
+  color: black;
+  margin: 48px auto auto auto;
+}
+
+pre {
+  text-align: start !important;
+  display: flex;
+  width: 100%;
+  padding: 0px 16px !important;
+  overflow-y: auto;
+}
+
+.download-btn-holder {
+  justify-content: center;
+  display: inline-flex;
+  gap: 20px;
+}
+
+.download-btn {
+  margin-top: auto;
+  justify-content: center;
+  width: 182px;
+  height: 42px;
+  display: flex;
+  padding: 0px;
+  align-items: center;
+  border-radius: 4px;
+  padding: 0px 0px;
+  background: #e0eafd;
+  color: #3573ef;
+  font-size: 14px;
+  font-family: Inter;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.download-btn:hover {
+  background: #c2d5fa;
+}
+
+@media (max-width: 900px) {
+  .description {
+    margin-top: 48px;
+    margin-bottom: 36px;
+  }
+  .white-box {
+    height: 300px;
+  }
+  h1 {
+    font-size: 27px;
+  }
+  h2 {
+    font-size: 21px;
+  }
+}
