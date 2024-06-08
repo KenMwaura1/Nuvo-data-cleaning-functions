@@ -6,6 +6,8 @@
   "main": "src/index.tsx",
   "dependencies": {
     "@types/file-saver": "2.0.5",
+    "cors": "^2.8.5",
+    "express": "^4.19.2",
     "file-saver": "2.0.5",
     "lodash": "4.17.21",
     "nuvo-react": "2.11.2",
