@@ -30,7 +30,7 @@ export const ConvertFloats: FC<IHandlerFC> = ({ setResult }) => {
 
   return (
     <NuvoImporter
-      licenseKey="i6vah+ovAY/pnVeVTxyV1keJFMx8s+jGUbSgpf01OTY="
+      licenseKey="non-commercia"
       settings={{
         developerMode: true,	
         identifier: "product_data",
