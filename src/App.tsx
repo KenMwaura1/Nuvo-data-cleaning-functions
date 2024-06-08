@@ -4,6 +4,7 @@ import { ConvertFloats } from "./components/ConvertFloats";
 import { CheckDuplicates } from "./components/CheckDuplicates";
 import { AddCountryCode } from "./components/AddCountryCode";
 import { CrossColumnRegex } from "./components/CrossColumnRegex";
+import { BackendValidation } from "./components/BackendValidation"; 
 
 
 export default function App() {
@@ -20,11 +21,15 @@ export default function App() {
           <p className="description">
             This sandbox showcases multiple usecases of Cleaning Functions
           </p>
+          <h2>Data Upload and Validation using a Backend server</h2>
           <div className="download-btn-holder">
             {/* <ConvertFloats setResult={setResult} /> */}
             {/* <CheckDuplicates setResult={setResult} /> */}
             {/* <AddCountryCode setResult={setResult} /> */}
-            <CrossColumnRegex setResult={setResult} />
+            {/* <CrossColumnRegex setResult={setResult} /> */}
+
+            <BackendValidation setResult={setResult} />
+
           </div>
           <div className="white-box">
             {Object.keys(result).length !== 0 && (
