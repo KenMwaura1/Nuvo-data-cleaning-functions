@@ -25,7 +25,7 @@ export const BackendValidation: FC<IHandlerFC> = ({ setResult }) => {
 
   return (
     <NuvoImporter
-      licenseKey="i6vah+ovAY/pnVeVTxyV1keJFMx8s+jGUbSgpf01OTY="
+      licenseKey="non-commercial"
       settings={{
         developerMode: true,
         identifier: "user_data",
