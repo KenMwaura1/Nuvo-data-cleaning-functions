@@ -5,7 +5,7 @@ import { CheckDuplicates } from "./components/CheckDuplicates";
 import { AddCountryCode } from "./components/AddCountryCode";
 import { CrossColumnRegex } from "./components/CrossColumnRegex";
 import { BackendValidation } from "./components/BackendValidation"; 
-
+import { AddressValidation } from "./components/AddressValidation";
 
 export default function App() {
   const [result, setResult] = useState<any>(
@@ -29,6 +29,7 @@ export default function App() {
             {/* <CrossColumnRegex setResult={setResult} /> */}
 
             <BackendValidation setResult={setResult} />
+            <AddressValidation setResult={setResult} />
 
           </div>
           <div className="white-box">
