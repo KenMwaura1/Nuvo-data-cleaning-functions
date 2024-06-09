@@ -9,6 +9,7 @@ import { AddressValidation } from "./components/AddressValidation";
 import {SplitResult} from "./components/SplitResult";
 import {NestResult} from "./components/NestResult";
 import {CleanOutput} from "./components/CleanOutput";
+import {DynamicHTTPEndpoint} from "./components/DynamicHTTPEndpoint";
 
 export default function App() {
   const [result, setResult] = useState<any>(
@@ -24,7 +25,7 @@ export default function App() {
           <p className="description">
             This sandbox showcases multiple usecases of Cleaning Functions
           </p>
-          <h2> Remove Empty Values  </h2>
+          <h2> Send Data to Dynamic HTTP Endpoints  </h2>
           <div className="download-btn-holder">
             {/* <ConvertFloats setResult={setResult} /> */}
             {/* <CheckDuplicates setResult={setResult} /> */}
@@ -35,7 +36,8 @@ export default function App() {
             {/* <AddressValidation setResult={setResult} /> */}
             {/* <SplitResult setResult={setResult} /> */}
             {/* <NestResult setResult={setResult} /> */}
-             <CleanOutput setResult={setResult} /> 
+            {/* <CleanOutput setResult={setResult} />  */}
+            <DynamicHTTPEndpoint setResult={setResult} />
             
           </div>
           <div className="white-box">
