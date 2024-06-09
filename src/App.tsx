@@ -7,6 +7,7 @@ import { CrossColumnRegex } from "./components/CrossColumnRegex";
 import { BackendValidation } from "./components/BackendValidation"; 
 import { AddressValidation } from "./components/AddressValidation";
 import {SplitResult} from "./components/SplitResult";
+import {NestResult} from "./components/NestResult";
 
 export default function App() {
   const [result, setResult] = useState<any>(
@@ -22,7 +23,7 @@ export default function App() {
           <p className="description">
             This sandbox showcases multiple usecases of Cleaning Functions
           </p>
-          <h2>Split Data Requests & Results </h2>
+          <h2>Nested Data with Similar Parent ID  </h2>
           <div className="download-btn-holder">
             {/* <ConvertFloats setResult={setResult} /> */}
             {/* <CheckDuplicates setResult={setResult} /> */}
@@ -31,7 +32,8 @@ export default function App() {
 
             {/* <BackendValidation setResult={setResult} /> */}
             {/* <AddressValidation setResult={setResult} /> */}
-            <SplitResult setResult={setResult} />
+            {/* <SplitResult setResult={setResult} /> */}
+            <NestResult setResult={setResult} />
             
           </div>
           <div className="white-box">
