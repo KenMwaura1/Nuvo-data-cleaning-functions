@@ -6,6 +6,7 @@ import { AddCountryCode } from "./components/AddCountryCode";
 import { CrossColumnRegex } from "./components/CrossColumnRegex";
 import { BackendValidation } from "./components/BackendValidation"; 
 import { AddressValidation } from "./components/AddressValidation";
+import {SplitResult} from "./components/SplitResult";
 
 export default function App() {
   const [result, setResult] = useState<any>(
@@ -21,16 +22,17 @@ export default function App() {
           <p className="description">
             This sandbox showcases multiple usecases of Cleaning Functions
           </p>
-          <h2>Data Upload and Validation using a Backend server</h2>
+          <h2>Split Data Requests & Results </h2>
           <div className="download-btn-holder">
             {/* <ConvertFloats setResult={setResult} /> */}
             {/* <CheckDuplicates setResult={setResult} /> */}
             {/* <AddCountryCode setResult={setResult} /> */}
             {/* <CrossColumnRegex setResult={setResult} /> */}
 
-            <BackendValidation setResult={setResult} />
-            <AddressValidation setResult={setResult} />
-
+            {/* <BackendValidation setResult={setResult} /> */}
+            {/* <AddressValidation setResult={setResult} /> */}
+            <SplitResult setResult={setResult} />
+            
           </div>
           <div className="white-box">
             {Object.keys(result).length !== 0 && (
