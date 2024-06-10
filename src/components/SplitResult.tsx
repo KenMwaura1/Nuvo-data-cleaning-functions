@@ -1,4 +1,4 @@
-import React, { FC } from "react";
+import { FC } from "react";
 import { IHandlerFC } from "../types/HandlerFC";
 import { ColumnAPI, NuvoImporter } from "nuvo-react";
 
@@ -71,7 +71,7 @@ export const SplitResult: FC<IHandlerFC> = ({ setResult }) => {
 
   return (
     <NuvoImporter
-      licenseKey="none-commercial"
+      licenseKey="non-commercial"
       settings={{
         developerMode: true,
         identifier: "split_data",
